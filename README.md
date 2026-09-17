@@ -69,5 +69,7 @@ investment advice.
 ## Author
 
 Sacha Stojkovic
-BSc in Economics and Finance + Magistère Economist Engineer 
+
+BSc in Economics and Finance + Magistère Economist Engineer
+
 Aix-Marseille School of Economics — AMSE
