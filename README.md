@@ -1,4 +1,4 @@
-# Quantitative Trading Strategy: Nasdaq-100 Momentum
+# Quantitative Trading Strategy: Nasdaq-100 Momentum vs Buy-And-Hold
 
 [Open in Google Colab](https://colab.research.google.com/drive/1kOjg5VVM1kofCBsdzQl8SCKNgkuaVqJ3?usp=sharing)
 
