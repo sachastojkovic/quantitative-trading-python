@@ -79,10 +79,18 @@ Past performance does not guarantee future results.
 
 ## Results
 | Metric | Buy & Hold | Momentum MA50 |
+
 | Total Return | 533.35% | 231.08% |
+
 | Annualized Volatility | 22.09% | 13.92% |
+
 | Sharpe Ratio | 0.89 | 0.87 |
+
 | Maximum Drawdown | -35.12% | -18.87% |
+
+## Performance Comparison
+
+![Performance Comparison](performance_comparison.png)
 
 ## Disclaimer
 
