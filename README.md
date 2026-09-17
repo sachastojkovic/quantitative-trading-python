@@ -4,103 +4,70 @@
 
 ## Overview
 
-This project develops and evaluates a simple quantitative trading strategy based on the 50-day moving average of the QQQ ETF, which tracks the Nasdaq-100.
-
-The objective is to explore how a systematic trading strategy performs compared to a traditional buy-and-hold investment.
-
-This project was developed using Python as an introduction to quantitative finance and algorithmic trading.
+This project implements a simple momentum trading strategy based on the
+50-day moving average of QQQ, an ETF tracking the Nasdaq-100.
 
 ## Objectives
 
-- Retrieve historical financial market data.
-- Calculate daily returns and moving averages.
-- Develop a simple momentum trading strategy.
-- Backtest the strategy using historical data.
-- Compare its performance with a buy-and-hold benchmark.
-- Analyze risk-adjusted performance.
+- Apply Python to financial market data.
+- Calculate moving averages and trading signals.
+- Backtest a simple systematic strategy.
+- Compare the strategy with a Buy & Hold benchmark.
+- Evaluate return and risk metrics.
 
 ## Methodology
 
-The strategy uses a 50-day moving average (MA50) as a trading signal.
+The strategy uses the following rule:
 
-### Trading rules
+- Hold QQQ when its closing price is above its 50-day moving average.
+- Hold cash when its closing price is below its 50-day moving average.
 
-- If the QQQ price is above its 50-day moving average, the strategy holds the asset.
-- If the QQQ price is below or equal to its 50-day moving average, the strategy stays in cash.
-- The trading signal is shifted by one day to avoid using information from the same day's closing price.
-
-The strategy is compared against a buy-and-hold investment in QQQ.
-
-## Performance Metrics
-
-The following metrics are used to evaluate the strategies:
-
-- Total return
-- Annualized volatility
-- Sharpe ratio
-- Maximum drawdown
-
-## Technologies
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- yfinance
-- Google Colab
-
-## Project Structure
-
-```text
-quantitative-trading-python/
-│
-├── Nasdaq100_Momentum_Strategy.ipynb
-└── README.md
-```
-
-## Key Findings
-
-The notebook compares the performance and risk characteristics of the momentum strategy and the buy-and-hold benchmark.
-
-Results and conclusions are based on the historical backtest presented in the notebook.
-
-## Limitations
-
-This project is intended for educational purposes.
-
-The backtest does not necessarily account for:
-
-- Transaction costs
-- Taxes
-- Slippage
-- Market impact
-- Out-of-sample validation
-- Changing market conditions
-
-Past performance does not guarantee future results.
+The strategy is compared with a Buy & Hold investment in QQQ.
 
 ## Results
+
 | Metric | Buy & Hold | Momentum MA50 |
 
 | Total Return | 533.35% | 231.08% |
 
 | Annualized Volatility | 22.09% | 13.92% |
 
-| Sharpe Ratio | 0.89 | 0.87 |
+| Sharpe Ratio | 0.89 | 0.87% |
 
-| Maximum Drawdown | -35.12% | -18.87% |
+| Maximum Drawdown | -35.12% | -18.87% |		
 
 ## Performance Comparison
 
 ![Performance Comparison](performance_comparison.png)
 
+## Technologies
+
+- Python
+- Google Colab
+- pandas
+- NumPy
+- Matplotlib
+- yfinance
+
+## Limitations
+
+The backtest compares the return and risk characteristics of a moving-average momentum strategy with a Buy & Hold benchmark. The results should be interpreted cautiously because transaction costs, slippage, taxes, and out-of-sample validation are not included.
+
+- No transaction costs.
+- No slippage.
+- No taxes.
+- The strategy is tested on historical data.
+- Historical performance does not guarantee future results.
+- The strategy uses a single technical indicator.
+- No out-of-sample testing is included.
+
 ## Disclaimer
 
-This project is not investment advice. It is an educational project designed to explore quantitative trading concepts using Python.
+This project is for educational purposes only and does not constitute
+investment advice.
 
 ## Author
 
 Sacha Stojkovic
-
 BSc in Economics and Finance + Magistère Economist Engineer 
 Aix-Marseille School of Economics — AMSE
